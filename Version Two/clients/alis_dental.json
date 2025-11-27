@@ -1,0 +1,41 @@
+{
+    "name": "Ali’s Dental Clinic",
+    "address": "72 Camden Road, London NW1 9DR",
+    "phone": "0203 912 8473",
+    "hours": {
+        "monday": "9am to 6pm",
+        "tuesday": "9am to 6pm",
+        "wednesday": "9am to 6pm",
+        "thursday": "10am to 8pm",
+        "friday": "9am to 5pm",
+        "saturday": "10am to 2pm",
+        "sunday": "closed"
+    },
+    "services": [
+        "Routine Check-up",
+        "Dental Cleaning",
+        "Composite Fillings",
+        "Whitening Treatment",
+        "Invisalign Consultation",
+        "Emergency Pain Appointment"
+    ],
+    "prices": {
+        "Check-up": "£45",
+        "Cleaning": "£60",
+        "Whitening": "£120",
+        "Invisalign Consultation": "Free",
+        "Emergency Appointment": "£80"
+    },
+    "faq": {
+        "Do you accept NHS patients?": "No, we are a private clinic.",
+        "Do you offer Invisalign?": "Yes, we provide Invisalign consultations and full treatment plans.",
+        "Do you take walk-ins?": "Only for emergency pain appointments, subject to availability.",
+        "Is parking available?": "Yes, limited on-site parking is available.",
+        "How long is a cleaning appointment?": "Approximately 30 minutes."
+    },
+    "policies": {
+        "cancellation": "24-hour cancellation notice required",
+        "lateness": "Late arrivals over 10 minutes may need to reschedule",
+        "payments": "Card, contactless, cash"
+    }
+}
