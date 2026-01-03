@@ -30,7 +30,7 @@ This repository contains my Strategic Digital Leadership final project: a proof-
 
 ## Quick start (Version Three)
 
-### 1) create a virtual environment
+## 1) create a virtual environment
 ```bash
 python -m venv .venv
 ```
