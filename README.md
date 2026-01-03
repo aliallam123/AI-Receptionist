@@ -35,11 +35,14 @@ This repository contains my Strategic Digital Leadership final project: a proof-
 python -m venv .venv
 ```
 Windows:
-`.venv\Scripts\activate`
-
+```
+.venv\Scripts\activate
+```
 Mac/Linux:
 
+```
 `source .venv/bin/activate`
+```
 
 ## 2) install dependencies
 `pip install -r "Version Three/requirements.txt"`
