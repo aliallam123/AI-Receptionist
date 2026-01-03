@@ -40,3 +40,45 @@ Windows:
 Mac/Linux:
 
 source .venv/bin/activate
+
+## 2) install dependencies
+pip install -r "Version Three/requirements.txt"
+
+## 3) set environment variables (no secrets committed)
+
+Required:
+N8N_CHECK_AVAILABILITY_URL
+N8N_BOOK_APPOINTMENT_URL
+
+Optional:
+INTENT_CONFIDENCE_THRESHOLD (default: 0.60)
+
+Windows PowerShell example:
+$env:N8N_CHECK_AVAILABILITY_URL="https://example.com/webhook/check"
+$env:N8N_BOOK_APPOINTMENT_URL="https://example.com/webhook/book"
+$env:INTENT_CONFIDENCE_THRESHOLD="0.60"
+
+Mac/Linux example:
+export N8N_CHECK_AVAILABILITY_URL="https://example.com/webhook/check"
+export N8N_BOOK_APPOINTMENT_URL="https://example.com/webhook/book"
+export INTENT_CONFIDENCE_THRESHOLD="0.60"
+
+## 4) run the api
+From the Version Three/ folder:
+uvicorn server:app --host 0.0.0.0 --port 8000 --reload
+
+## Notes about the public repo
+credentials and API keys are never committed
+some integrations are intentionally stubbed in the public version (e.g., whisper/TTS calls) to keep the repo safe to share
+this repo’s main purpose is to evidence design iteration, architecture decisions, and version control aligned to the report
+
+## High-level call flow
+inbound call hits /voice
+caller speech is captured and transcribed (whisper in working PoC)
+transcript is passed into the intent classifier to return intent + confidence
+confidence routing decides: proceed vs fallback prompt
+if applicable, one of two n8n workflows is triggered: availability check or booking request
+
+## License
+Educational use only (university module submission). No production warranty.
+
