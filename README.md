@@ -35,37 +35,37 @@ This repository contains my Strategic Digital Leadership final project: a proof-
 python -m venv .venv
 ```
 Windows:
-.venv\Scripts\activate
+`.venv\Scripts\activate`
 
 Mac/Linux:
 
-source .venv/bin/activate
+`source .venv/bin/activate`
 
 ## 2) install dependencies
-pip install -r "Version Three/requirements.txt"
+`pip install -r "Version Three/requirements.txt"`
 
 ## 3) set environment variables (no secrets committed)
 
 Required:
-N8N_CHECK_AVAILABILITY_URL
-N8N_BOOK_APPOINTMENT_URL
+`N8N_CHECK_AVAILABILITY_URL`
+`N8N_BOOK_APPOINTMENT_URL`
 
 Optional:
-INTENT_CONFIDENCE_THRESHOLD (default: 0.60)
+`INTENT_CONFIDENCE_THRESHOLD (default: 0.60)`
 
 Windows PowerShell example:
-$env:N8N_CHECK_AVAILABILITY_URL="https://example.com/webhook/check"
-$env:N8N_BOOK_APPOINTMENT_URL="https://example.com/webhook/book"
-$env:INTENT_CONFIDENCE_THRESHOLD="0.60"
+`$env:N8N_CHECK_AVAILABILITY_URL="https://example.com/webhook/check"`
+`$env:N8N_BOOK_APPOINTMENT_URL="https://example.com/webhook/book"`
+`$env:INTENT_CONFIDENCE_THRESHOLD="0.60"`
 
 Mac/Linux example:
-export N8N_CHECK_AVAILABILITY_URL="https://example.com/webhook/check"
-export N8N_BOOK_APPOINTMENT_URL="https://example.com/webhook/book"
-export INTENT_CONFIDENCE_THRESHOLD="0.60"
+`export N8N_CHECK_AVAILABILITY_URL="https://example.com/webhook/check"`
+`export N8N_BOOK_APPOINTMENT_URL="https://example.com/webhook/book"`
+`export INTENT_CONFIDENCE_THRESHOLD="0.60"`
 
 ## 4) run the api
 From the Version Three/ folder:
-uvicorn server:app --host 0.0.0.0 --port 8000 --reload
+`uvicorn server:app --host 0.0.0.0 --port 8000 --reload`
 
 ## Notes about the public repo
 credentials and API keys are never committed
