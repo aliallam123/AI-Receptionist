@@ -45,7 +45,9 @@ source .venv/bin/activate
 ```
 
 ## 2) install dependencies
+```
 pip install -r "Version Three/requirements.txt"
+```
 
 ## 3) set environment variables (no secrets committed)
 
